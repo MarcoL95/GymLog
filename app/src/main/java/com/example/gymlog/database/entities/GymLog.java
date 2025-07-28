@@ -20,11 +20,24 @@ public class GymLog {
     private LocalDateTime date;
 
 
+
+
     public GymLog(String exercise, double weight, int reps) {
         this.exercise = exercise;
         this.weight = weight;
         this.reps = reps;
         date = LocalDateTime.now();
+    }
+
+    @Override
+    public String toString() {
+        return "GymLog{" +
+                "id=" + id +
+                ", exercise='" + exercise + '\'' +
+                ", weight=" + weight +
+                ", reps=" + reps +
+                ", date=" + date +
+                '}';
     }
 
     public int getId() {
